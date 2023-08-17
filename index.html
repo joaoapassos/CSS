@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home dos arquivos HTML</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: Verdana, sans-serif;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulo{
+        padding: 50px;
+    }
+    .titulo p{
+        padding: 20px 0px;
+    }
+
+    .box{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        background-color: rgb(231, 231, 231);
+        padding: 20px 30px;
+        width: 50%;
+        border-radius: 20px;
+    }
+    .links li{
+        list-style: none;
+        padding: 5px 0;
+    }
+    .links h3{
+        padding: 10px 0;
+    }
+    .links a{
+        text-decoration: none;
+        color: rgb(230, 146, 146);
+        transition: 0.2s;
+    }
+    .links a:hover{
+        color: rgb(197, 114, 114);
+    }
+</style>
+<body>
+    <section class="titulo">
+        <h1>Home dos arquivos da pasta CSS</h1>
+        <p>Nesse repositorio, eu guardo estudos de estilos e conceitos de CSS</p>
+    </section>
+    <section class="box">
+        <section class="links">
+            <h3>Links dos arquivos abaixo</h3>
+            <ul>
+                <li><a href="./Arquivos/" target="_blank"></a></li>
+                <li><a href="./Arquivos/" target="_blank"></a></li>
+            </ul>
+        </section>
+    </section>
+</body>
+</html>
