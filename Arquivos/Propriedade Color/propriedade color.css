@@ -1,0 +1,48 @@
+*{
+    margin: 20px;
+}
+
+body {
+    background-color: rgb(245, 214, 214);
+}
+
+.titulo{
+    color: rgb(59, 30, 87); /* altera as cores do texto dentro do elemento */
+
+}
+
+.text{
+    color: rgb(53, 53, 100);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.link {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.link p {
+    color: rgb(170, 28, 28);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-variant-caps: all-petite-caps;
+    transition: 0.5s;
+}
+
+.link p:hover {
+    color: rgb(117, 32, 32);
+    text-decoration: underline;
+}
