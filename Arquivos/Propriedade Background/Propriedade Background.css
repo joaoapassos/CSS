@@ -1,0 +1,106 @@
+* {
+    margin: 20px;
+}
+
+body {
+    background-color: rgb(245, 214, 214);
+    /* altera a cor do background */
+}
+
+.imgback {
+    /* *********************************************************************************************************************** */
+    height: 300px;
+    /* width: 500px; */
+    background-color: rgb(148, 148, 148);
+    /* altera a cor do background (https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)*/
+
+
+    background-image: url(./pexels-vlad-alexandru-popa-1402790.jpg);
+    /* adiciona uma imagem ao background (https://developer.mozilla.org/en-US/docs/Web/CSS/background-image)*/
+
+
+    background-size: cover;
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/background-size) */
+    /* ele mexer em como a imagem vai aparecer:      
+    Cover(adapita a imagem ao tamanho do elemento), 
+    Contain(adapita a imagem ao tamanho dela dentro do elemento, e repete ela com forme ela cabe dentro do espaço do elemento) */
+
+
+    background-repeat: no-repeat;
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat) */
+    /* ele diz se a imagem vai repetir ou não, quando o size estiver em contain ou não, vc diz se vai repetir ou não se não repitir ele vai 
+    preencher com a cor do background 
+    Repeat(repete o back), no-repeat(não repete o back), repeat-x(repete só na horizontal a imagem), repeat-y(repete só na vertical a imagem),*/
+
+
+    background-position: center 75%;
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/background-position) */
+    /* top, bottom, center, left, right -- dá para trabalhar com dois valores (v-x  v-y (left bottom)), 
+    com numericos como porcentagem e pixels (v-x v-y (30% 75%))*/
+
+    background-position-x: none;
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/background-position-x) */
+    background-position-y: none;
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/background-position-y) */
+    /* Trabalha a posição que irá mostrar a imagem */
+
+
+    /* ou background: cor url() repeat position (não da para usar o size); */
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/background) */
+
+
+    /* background-clip: text; 
+    -webkit-background-clip: text; */
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip) */
+    /* trabalha recortando a imagem */
+
+    background-attachment: scroll;
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment) */
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgback p {
+    padding: 10px;
+    text-align: center;
+    color: rgba(255, 255, 255);
+    background-color: rgba(180, 64, 64, 0.678);
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+.titulo {
+    color: rgb(59, 30, 87);
+
+}
+
+.text {
+    color: rgb(53, 53, 100);
+}
+
+.link {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.link p {
+    color: rgb(170, 28, 28);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-variant-caps: all-petite-caps;
+    transition: 0.5s;
+}
+
+.link p:hover {
+    color: rgb(117, 32, 32);
+    text-decoration: underline;
+}
