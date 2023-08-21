@@ -1,0 +1,123 @@
+* {
+    margin: 20px;
+}
+
+body {
+    background-color: rgb(245, 214, 214);
+}
+.text {
+    color: rgb(53, 53, 100);
+
+    text-align: justify;
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/text-align) */
+    /* Nada mais que o aliamento do texto, se é left, right, center, justify, end ou start */
+
+    direction: ltr;
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/direction) */
+    /* ele altera a direção do texto de ltr(left to right) ou rtl(Right to left) */
+
+    unicode-bidi:bidi-override;
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/unicode-bidi) */
+    /* Só sei que trabalha junto do direction para mudar a diração, nesse modo ele inverte o texto */
+
+    text-decoration:none;
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration) */
+    /* Serve para decorar o texto com um linhas, pontilhados, funciona melhor em link mas tem opções para o texto padrão */
+
+    text-decoration-color: red;
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-color) */
+    /* trabalha a cor da decoração do texto */
+}
+
+.t1{
+    text-decoration-line:underline;
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-line) */
+    /* Decoração de linha */
+    
+    text-decoration-style:wavy;
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-style) */
+    /* Estilização da linha */
+}
+.t2{
+    text-transform:uppercase;
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform) */
+    /* transforma o texto para maiusculo(uppercase), minusculo(lowercase) e todas 1° letras em maiusculo(capitalize)*/
+
+    line-height: 1.8;
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/line-height) */
+    /* Serve para separar ou juntar as linhas verticalmente, normalmente trabalha com casa decimal*/
+    
+}
+.t3{
+    text-indent: 20px;
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent) */
+    /* Serve para recuar a primeira linha de um texto */
+}
+.t4{
+    letter-spacing: 5px;
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing) */
+    /* Serve para espaçar as letras ou fazer o inverso com valor negativo */
+}
+.imgback p{
+    word-spacing: 20px;
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing) */
+    /* altera o epaçamento entre palavras */
+}
+
+.link {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+
+    text-decoration:none;
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration) */
+    /* Serve para decorar o texto com um linhas, pontilhados, funciona melhor em link mas tem opções para o texto padrão */
+}
+
+.link p {
+    color: rgb(170, 28, 28);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-variant-caps: all-petite-caps;
+    transition: 0.5s;
+}
+
+.link p:hover {
+    color: rgb(117, 32, 32);
+    text-decoration: underline;
+}
+
+
+
+.imgback {
+    height: 300px;
+    background: rgb(148, 148, 148) url(./pexels-vlad-alexandru-popa-1402790.jpg) no-repeat center 75%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgback p {
+    padding: 10px;
+    text-align: center;
+    color: rgba(255, 255, 255);
+    background-color: rgba(180, 64, 64, 0.678);
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titulo{
+    background-color: rgb(236, 194, 194);
+    color: rgb(59, 30, 87);
+
+    border: 20px solid rgb(236, 194, 194);
+    border-radius: 10px;
+
+}
+
+
+
+
+
