@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&family=Tilt+Prism&display=swap');
+/* Importar fonte */
+* {
+    margin: 20px;
+}
+
+body {
+    background-color: rgb(245, 214, 214);
+}
+.text {
+    color: rgb(53, 53, 100);
+    text-align: justify;
+    direction: ltr;
+    unicode-bidi:bidi-override;
+    text-decoration:none;
+    text-decoration-color: red;
+}
+
+.titulo{
+    background-color: rgb(236, 194, 194);
+    color: rgb(59, 30, 87);
+    border: 20px solid rgb(236, 194, 194);
+    border-radius: 10px;
+    text-transform: uppercase;
+
+
+    font-weight: 1000;
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight) */
+    /* altera a grosura da font, pode ser usado em numero de 100 ate o numero maximo da fonte
+    e pode ser usado bold, normal, lighter e bolder */
+
+    font-family: "Tilt Prism";
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/font) */
+    /* familia da fonte */
+
+    font-size: auto;
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) */
+    /* Tamanho da fonte */
+
+    
+
+}
+
+.t1{
+    text-decoration-line:underline;
+    text-decoration-style:wavy;
+    
+    font-size: 30px;
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) */
+    /* Tamanho da fonte */
+
+    font-family: "Qwitcher Grypen";
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/font) */
+    /* familia da fonte */
+}
+.t2{
+    text-transform:uppercase;
+    line-height: 1.8;
+    
+    font-style: italic;
+    /* (https://developer.mozilla.org/en-US/docs/Web/CSS/font-style) */
+    /* Estilo a fonte se é italico ou oblique */
+}
+.t3{
+    text-indent: 20px;
+}
+.t4{
+    letter-spacing: 5px;
+}
+.imgback p{
+    word-spacing: 20px;
+}
+
+.link {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    text-decoration:none;
+}
+
+.link p {
+    color: rgb(170, 28, 28);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-variant-caps: all-petite-caps;
+    transition: 0.5s;
+}
+
+.link p:hover {
+    color: rgb(117, 32, 32);
+    text-decoration: underline;
+}
+
+
+
+.imgback {
+    height: 300px;
+    background: rgb(148, 148, 148) url(./pexels-vlad-alexandru-popa-1402790.jpg) no-repeat center 75%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgback p {
+    padding: 10px;
+    text-align: center;
+    color: rgba(255, 255, 255);
+    background-color: rgba(180, 64, 64, 0.678);
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
+
+
