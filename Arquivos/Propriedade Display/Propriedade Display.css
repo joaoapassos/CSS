@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&family=Tilt+Prism&display=swap');
+* {
+    margin: 20px;
+}
+
+body {
+    background-color: rgb(245, 214, 214);
+}
+
+li {
+    display: inline;
+    border: 1px solid;
+    height: 100px;
+    margin: -20px 0 -20px 0;
+    /* Aqui ele possui o height mas não tem alteração pois o inline não respeita essa função */
+}
+
+
+ul:hover li{
+    display: inline-block;
+    height: 100px;
+    /* Já aqui ele respeita porque ele esta inline mas tem o block */
+}
+
+.t4{
+    letter-spacing: 5px;
+    display: none;
+    /* Faz com que não apareça o elemento */
+    /* A diferença do display none pelo visibility hidden -- no display none ele some completamente com elemento e qualquer outro proximo 
+    ocupa seu espaço já o visibility hidden ele só não mostra o elemento mas ele ainda esta ali */
+}
+
+
+.text {
+    color: rgb(53, 53, 100);
+    text-align: justify;
+    direction: ltr;
+    unicode-bidi:bidi-override;
+    text-decoration:none;
+    text-decoration-color: red;
+}
+
+.titulo{
+    background-color: rgb(236, 194, 194);
+    color: rgb(59, 30, 87);
+    border: 20px solid rgb(236, 194, 194);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-family: "Tilt Prism";
+    font-size: auto;
+}
+
+.t1{
+    text-decoration-line:underline;
+    text-decoration-style:wavy;   
+    font-size: 30px;
+    font-family: "Qwitcher Grypen";
+}
+.t2{
+    text-transform:uppercase;
+    line-height: 1.8; 
+    font-style: italic;
+}
+.t3{
+    text-indent: 20px;
+}
+
+
+
+
+.link {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    text-decoration:none;
+}
+
+.link p {
+    color: rgb(170, 28, 28);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-variant-caps: all-petite-caps;
+    transition: 0.5s;
+}
+
+.link p:hover {
+    color: rgb(117, 32, 32);
+    text-decoration: underline;
+}
+
+
+
+.imgback {
+    height: 300px;
+    background: rgb(148, 148, 148) url(./pexels-vlad-alexandru-popa-1402790.jpg) no-repeat center 75%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgback p {
+    padding: 10px;
+    text-align: center;
+    color: rgba(255, 255, 255);
+    background-color: rgba(180, 64, 64, 0.678);
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
+
+
