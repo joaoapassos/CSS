@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&family=Tilt+Prism&display=swap');
+
+* {
+    margin: 20px;
+}
+
+body {
+    background-color: rgb(245, 214, 214);
+}
+
+
+
+.imgback {
+    height: 70vh;
+    /* background: rgb(148, 148, 148) url(./pexels-vlad-alexandru-popa-1402790.jpg) no-repeat center 75%;
+    background-size: cover; */
+    /* display: flex; */
+    justify-content: center;
+    background-color: rgba(180, 64, 64, 0.678);
+    align-items: center;
+    overflow: auto;
+    /* Nesse caso o "overflow:auto;" serve para indentificar o tamanho total do elemento, 
+    então no caso ele passa a enetender que a img apesar de ter o FLOAT ainda ocupa um certo espaço dentro do elemento */
+}
+.imgback img{
+    height: 70%;
+    margin-bottom: 10px;
+    float: left;
+    /* Aqui o FLOAT faz com que a img saia do seu fluxo normal e se desprenda do elemento para que flutue para esquerda */
+    /* (https://developer.mozilla.org/pt-BR/docs/Web/CSS/float) */
+}
+.imgback .para-baixo-da-img{
+    color: black;
+    clear: both;
+    /* Clear serve para limpar a flutuação da img e fazer com que o elemento "para-baixo-da-img" respeite o fluxo como ele seria sem o FLOAT */
+    /* No caso do both ele tira todo tipo de flutuação seja para direita seja para esquerda */
+    /* mas tem "CLEAR: right;" que só limpa as flutuações da direita e assim vai */
+    /* (https://developer.mozilla.org/pt-BR/docs/Web/CSS/clear) */
+}
+
+.imgback p, .imgback h3 {
+    padding: 0px;
+    /* text-align: center; */
+    color: rgba(255, 255, 255);
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.imgback h3{
+    font-size: 25px;
+}
+
+
+/* .flex-pai {
+    background-color: blue;
+    height: 70vh;
+    max-width: 100vw;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+}
+
+.flex-pai div{
+    height: 300px;
+}
+
+
+@media screen and (max-width:600px) {
+    .flex-pai{
+        flex-direction: column;
+    }
+}
+
+.div1 {
+    background-color: yellow;
+    display: flex;
+    flex: 40%;
+}
+
+.div2 {
+    background-color: red;
+    display: flex;
+    flex: 40%;
+}
+
+.div3 {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex: 100%;
+} */
+
+
+.text {
+    color: rgb(53, 53, 100);
+    text-align: justify;
+    direction: ltr;
+    unicode-bidi: bidi-override;
+    text-decoration: none;
+    text-decoration-color: red;
+}
+
+.titulo {
+    background-color: rgb(236, 194, 194);
+    color: rgb(59, 30, 87);
+    border: 20px solid rgb(236, 194, 194);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-family: "Tilt Prism";
+    font-size: auto;
+}
+
+.t1 {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    font-size: 30px;
+    font-family: "Qwitcher Grypen";
+}
+
+.t2 {
+    text-transform: uppercase;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+.t3 {
+    text-indent: 20px;
+    font-family: 'audiowide';
+}
+
+
+.link {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.link p {
+    color: rgb(170, 28, 28);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-variant-caps: all-petite-caps;
+    transition: 0.5s;
+}
+
+.link p:hover {
+    color: rgb(117, 32, 32);
+    text-decoration: underline;
+}

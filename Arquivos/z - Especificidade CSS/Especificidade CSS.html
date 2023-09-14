@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidade CSS</title>
+
+    <link rel="stylesheet" href="./Especificidade CSS.css">
+</head>
+<style>
+    h3 {
+        color: blueviolet;
+    }
+</style>
+
+<body>
+    <h1 class="titulo">Especificidade CSS</h1>
+
+    <!-- Conflitos e motivos de as vezes o CSS não obedecer -->
+
+    <div class="especif">
+
+        <h3 style="color: red;">Regra 1</h2>
+        <p>
+            O estilo possui uma prioridade que segue primeiro vindo dentro da TAG, depois um estilo dentro da pagina HTML, e aí vai para o link do CSS.
+        </p>
+        <h3 class="aqua" id="aqua">Regra 2</h2>
+        <p>
+            Seletores mais específicos tem maior precedência sobre os menos especificos
+        </p>
+        <p>
+            Ids recebem mais prioridade que classes e classes mais prioriades do que p, div, h2(chamados de seletores simples) chamados no css
+        </p>
+        <p>
+            Porem quando o elemento é citado antes da classe ele acaba sendo muito mais importante que a class sozinha como no exemplo "p .exemplo" ao contrario de ".exemplo p" que nesse caso recebe menos prioridade que a anterior
+        </p>
+        <h3>Regra 3</h2>
+        <p>
+            Se caso use o mesmo seletor varias vezes com valores diferente o valor do ultimo sera usado
+        </p>
+        <h3>Resumo</h2>
+        <p>
+            Em ordem Id -- seletor . class -- class -- seletor simples ||||| tag -- estilo dentro do html -- link do arquivo css
+        </p>
+        <h3 class="importante" style="color: blueviolet;">!important</h2>
+        <p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/important" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/important</a>
+            <p>
+                Ela faz com que quebre mais ou menos o fluxo de importancia do css com base no que a gente acha importante;<br>
+                Mas não é bom ficar usando essa propriedade porque se não alem de virar uma bagunça o css, não faz sentido colocar important em tudo
+            </p>
+        </p>
+
+    </div>
+
+    <a class="link" href="../../index.html">
+        <p><abbr title="Pagina incial de todos arquivos CSS">Voltar para o home</abbr></p>
+    </a>
+</body>
+
+</html>
