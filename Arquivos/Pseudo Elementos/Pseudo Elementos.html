@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elementos</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&family=Tilt+Prism&display=swap');
+    *, *::after, *::before{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 90vh;
+        align-items: center;
+        justify-content: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #cf3737;
+        transition: 0.3s;
+    }
+
+    /* (https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-elements) */
+    /* Pseudo Elemento serve para adicionar um conteúdo a um elemento sem alterá-lo no html */
+
+    h1{
+        color: #c0b9d9;
+    }
+    h1::after{
+        content: '';
+        background-color: #3d2d94;
+        height: 10px;
+        width: 100%;
+        display: block;
+    }
+    h1::before{
+        content: '';
+        background-color: #c0b9d9;
+        height: 10px;
+        width: 100%;
+        display: block;
+    }
+
+
+
+    h1, p{
+        padding: 10px;
+    }
+    h1::selection, p::selection{/* ::selection serve para aplica estilos para partes do documento que foram selecionadas pelo usuário (tal como clicar e arrastar o ponteiro do mouse através de um texto. */
+        /* (https://developer.mozilla.org/pt-BR/docs/Web/CSS/::selection) */
+        background-color: yellow;
+        color: blue;
+
+    }
+
+    li::marker{/* ::marker serve para mudar o marcador de uma lista*/
+        /* (https://developer.mozilla.org/en-US/docs/Web/CSS/::marker) */
+        content: "▶ ";
+        color: #c0b9d9;
+    }
+    li::selection{
+        background-color:#ff6a52 ;
+    }
+
+    abbr{
+        text-decoration: none;
+    }
+
+    a{
+        transition: 0.3s;
+    }
+    a:hover{
+        color: #c0b9d9;
+    }
+    ::placeholder{/* ::placeholder serve para alterar o estilo do texto de exemplo dentro do input*/
+        /* (https://developer.mozilla.org/docs/Web/CSS/::placeholder) */ 
+        color: rgb(17, 0, 255);
+        font-size: 30px;
+        font-family:'Qwitcher Grypen';
+        padding-left: 20px;
+    }
+</style>
+
+<body>
+
+    <h1>Pseudo Elementos</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Aliquam nisi, deserunt aperiam, harum ad ut a magnam blanditiis. Et.</li>
+        <input type="text" placeholder="Exemplo">
+    </ul> 
+
+
+    <a class="link" href="../../index.html">
+        <p><abbr title="Pagina incial de todos arquivos CSS">Voltar para o home</abbr></p>
+    </a>
+
+</body>
+</html>
